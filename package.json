@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -35,7 +36,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "clickoutside-react",
+  "name": "@jyoketsu/click-outside-react",
   "author": "xujie",
   "module": "dist/clickoutside-react.esm.js",
   "size-limit": [
@@ -59,6 +60,7 @@
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "babel-loader": "^8.1.0",
+    "gh-pages": "^3.1.0",
     "husky": "^4.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -67,5 +69,11 @@
     "tsdx": "^0.14.0",
     "tslib": "^2.0.1",
     "typescript": "^4.0.3"
-  }
+  },
+  "keywords": [
+    "react",
+    "component",
+    "clickOutside",
+    "click-outside"
+  ]
 }
